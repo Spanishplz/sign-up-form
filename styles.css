@@ -1,3 +1,9 @@
+:root {
+    --main-blue: #576b7a;
+    --light-gray: hsl(210deg 20% 98%);
+    
+}
+
 *,::before,::after {
     box-sizing: border-box;
     padding: 0;
@@ -35,7 +41,7 @@ body {
 }
 
 .image-div {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     flex: 1 1 40vw;
     background-image: url("img/bonfire.jpg");
     background-size: cover;
@@ -60,13 +66,13 @@ body {
 }
 
 .content-div {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     flex: 1 1 60vw;
 }
 
 .content-wrapper {
     height: 100%;
-    background-color: lightgray;
+    background-color: var(--light-gray);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,6 +86,11 @@ header {
     padding: 100px 50px 40px;
     width: 80%;
     flex: 1 1 auto;
+
+    & p {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
 }
 
 form {
@@ -90,9 +101,9 @@ form {
     
     background-color: white;
     padding: 20px 50px;
-    border-top:1px solid grey;
-    border-bottom:1px solid grey;
-    box-shadow: 10px 3px 9 px;
+    /* border-top: 1px solid var(--main-blue); */
+    /* border-bottom: 1px solid var(--main-blue); */
+    box-shadow: 5px 2px 4px 0px grey;
         & h2 {
         margin-bottom: 10px;
     }
@@ -131,7 +142,7 @@ form {
 
 button {
     padding: 10px 30px;
-    background-color: dodgerblue;
+    background-color: var(--main-blue);
     color: white;
     font-weight: bold;
     border-radius: 5px;
