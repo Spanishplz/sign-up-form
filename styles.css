@@ -17,6 +17,7 @@ html {
 body {
     height: 100vh;
     display: flex;
+    font-family: "Helvetica", sans-serif;
 }
 
 .image-div {
@@ -32,8 +33,8 @@ body {
 .image-div .title{
     position: absolute;
     display: box;
-    color: red;
-    background-color: hsl(176, 0%, 70%, 0.5);
+    color: rgb(0, 170, 0);
+    background-color: rgba(255, 255, 255, 0.60);
     width: 100%;
     text-align: center;
     padding: 10px 40px;
