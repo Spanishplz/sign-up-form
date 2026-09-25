@@ -90,17 +90,20 @@ form {
 
     & label {
         font-size: 12px;
+        font-weight: 600;
     }
 
     & input {
         width: 250px;
         height: 25px;
+        border: 1px solid grey;
         border-radius: 5px;
-
+        padding: 5px 8px 5px;
     }
     & p{
         display: flex;
         flex-direction: column;
+        gap: 2px;
     }
 
 
