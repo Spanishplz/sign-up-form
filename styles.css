@@ -4,6 +4,15 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Shorebreak';
+    src: url('fonts/ShorebreakScriptPERSONALUSE-Regular.woff2') format('woff2'),
+         url('fonts/ShorebreakScriptPERSONALUSE-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
@@ -16,6 +25,8 @@ input {
 html {
     
 }
+
+
 
 body {
     height: 100vh;
@@ -34,10 +45,14 @@ body {
 }
 
 .image-div .title{
+    font-family:"shorebreak";
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
     position: absolute;
     display: box;
-    color: rgb(0, 170, 0);
-    background-color: rgba(255, 255, 255, 0.60);
+    /* color: rgb(0, 170, 0); */
+    color: white;
+    background-color: rgba(255, 255, 255, 0.10);
     width: 100%;
     text-align: center;
     padding: 10px 40px;
@@ -120,4 +135,9 @@ button {
     color: white;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.form-body input[type="text"] {
+    
+
 }
