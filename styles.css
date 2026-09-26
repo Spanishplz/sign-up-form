@@ -48,21 +48,30 @@ body {
     background-repeat: no-repeat;
     position: relative;
     display: flex;
+    font-family:"shorebreak";
+}
+.image-div-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.10);    
+    margin-top: 28.5vh;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
 }
 
+.image-div img {
+    width: 80px;
+    height: auto;
+}
 .image-div .title{
-    font-family:"shorebreak";
-    font-size: 4rem;
     letter-spacing: 0.2rem;
-    position: absolute;
-    display: box;
-    /* color: rgb(0, 170, 0); */
     color: white;
-    background-color: rgba(255, 255, 255, 0.10);
-    width: 100%;
-    text-align: center;
-    padding: 10px 40px;
-    margin-top: 30vh;
+
+    font-size: 3rem;
 }
 
 .content-div {
@@ -98,11 +107,9 @@ form {
 }
 
 .form-body {
-    
+
     background-color: white;
     padding: 20px 50px;
-    /* border-top: 1px solid var(--main-blue); */
-    /* border-bottom: 1px solid var(--main-blue); */
     box-shadow: 5px 2px 4px 0px grey;
         & h2 {
         margin-bottom: 10px;
