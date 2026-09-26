@@ -1,9 +1,12 @@
 :root {
     --main-blue: #576b7a;
+    --main-blue-clear: #6d8699;
     --light-gray: hsl(210deg 20% 98%);
     --clear-green: #77D38B;
     --light-green: #00dc33;
     --odin-blue:  hsl(224deg 70% 53%);
+    --main-orange: #ff4100;
+    --main-yellow: #ffa400;
 }
 
 *,::before,::after {
@@ -12,14 +15,6 @@
     margin: 0;
 }
 
-@font-face {
-    font-family: 'Shorebreak';
-    src: url('fonts/ShorebreakScriptPERSONALUSE-Regular.woff2') format('woff2'),
-         url('fonts/ShorebreakScriptPERSONALUSE-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Guevara';
@@ -69,7 +64,8 @@ body {
     background-repeat: no-repeat;
     position: relative;
     display: flex;
-    font-family: "Guevara";
+    flex-direction: column;
+
 }
 .image-div-wrapper {
     position: absolute;
@@ -86,13 +82,11 @@ body {
 }
 
 .image-div img {
-    height: 70px;
+    height: 80px;
     width: auto;
     /* transform: rotate(135deg) */
-    fill: url("#")
 }
 
-.color-svg
 
 .image-div .title{
     letter-spacing: 0.5rem;
@@ -105,7 +99,16 @@ body {
     background-clip: text;
     color: transparent;
     text-shadow: none;
-    font-size: 5rem;
+    font-size: 5.5rem;
+    align-self: end;
+    font-family: "Guevara";
+}
+
+.image-div > p {
+    color: var(--main-blue);;
+    display: block;
+    margin: auto auto 0 auto;
+    text-align: center;
 }
 
 .content-div {
@@ -191,6 +194,11 @@ button {
     color: white;
     font-weight: bold;
     border-radius: 5px;
+
+    &:hover {
+        background-color: var(--main-blue-clear);
+        cursor: pointer;
+    }
 }
 
 
@@ -223,3 +231,20 @@ button {
     }
 }
 
+.image-div a {
+    color: var(--main-blue);
+    font-color: inherit;
+
+    &:hover {
+        color: var(--main-blue-clear);
+    }
+}
+
+.form-footer a {
+    font-weight: bold;
+    color: var(--main-blue);
+
+    &:hover {
+        color: var(--main-blue-clear);
+    }
+}
