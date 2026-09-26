@@ -3,6 +3,7 @@
     --light-gray: hsl(210deg 20% 98%);
     --clear-green: #77D38B;
     --light-green: #00dc33;
+    --odin-blue:  hsl(224deg 70% 53%);
 }
 
 *,::before,::after {
@@ -25,7 +26,20 @@ img, picture, video, canvas, svg {
     max-width: 100%;
 }
 
+input,
+button,
+select,
+textarea{
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 input {
+    appearance: none;
+
     
 }
 
@@ -132,9 +146,10 @@ form {
     & input {
         width: 250px;
         height: 25px;
-        border: 1px solid grey;
+        border: thin solid #E5E7EB;
         border-radius: 5px;
         padding: 5px 8px 5px;
+
     }
     & p{
         display: flex;
@@ -146,9 +161,12 @@ form {
 }
 
 .form-footer {
-    padding: 30px 50px 10px;     
+    padding: 30px 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
 }
-
 
 button {
     padding: 10px 30px;
@@ -158,7 +176,33 @@ button {
     border-radius: 5px;
 }
 
-.form-body input[type="text"] {
-    
+
+
+.form-body input[type="text"],
+.form-body input[type="email"],
+.form-body input[type="tel"],
+.form-body input[type="password"]{
+    &:focus-visible {
+        outline: none;
+        
+    }
+    &:hover {
+        border: thin solid var(--main-blue);
+    }
+
+    &:focus {
+        /* color: red; */
+        box-shadow: 1px 2px 2px 2px #E5E7EB;
+        border: 1px solid var(--odin-blue);
+    }
+
 
 }
+
+.form-body input[type="password"],
+.form-body input[type="email"]{
+    &:user-invalid {
+        border: 1px solid red;
+    }
+}
+
