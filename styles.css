@@ -21,6 +21,16 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Guevara';
+    src: url('fonts/Guevara.woff2') format('woff2'),
+         url('fonts/Guevara.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
@@ -43,10 +53,6 @@ input {
     
 }
 
-html {
-    
-}
-
 
 
 body {
@@ -63,7 +69,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     display: flex;
-    font-family:"shorebreak";
+    font-family: "Guevara";
 }
 .image-div-wrapper {
     position: absolute;
@@ -83,12 +89,23 @@ body {
     height: 70px;
     width: auto;
     /* transform: rotate(135deg) */
+    fill: url("#")
 }
-.image-div .title{
-    letter-spacing: 0.2rem;
-    color: var(--light-green);
 
-    font-size: 3rem;
+.color-svg
+
+.image-div .title{
+    letter-spacing: 0.5rem;
+    colon transparent;
+    /* color: var(--light-green); */
+    background-image: linear-gradient(to top,
+                                      red 0% 10%,
+                                      orange 40% 75%,
+                                      grey 95%);
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    font-size: 5rem;
 }
 
 .content-div {
